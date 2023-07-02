@@ -22,7 +22,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link"  href="index.php?action=homeAdmin">Accueil</a>
+          <a class="nav-link"  href="index.php?action=home">Accueil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?action=listArticle">Voir mes articles</a>
@@ -37,7 +37,7 @@
         <ul class="navbar-nav">
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Profil
+          <i class="fa-solid fa-user fa-beat-fade"></i>
           </a>
           <ul class="dropdown-menu dropdown-menu-lg-end " aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item active" href="#" aria-current="page">Voir Profil</a></li>
@@ -54,20 +54,20 @@
 <div class="card w-25 mx-auto bg-light mt-5" >
   <div class="card-header d-flex justify-content-start">
     <h3>Mon profil</h3>&nbsp;&nbsp;
-    <a href="index.php?action=editProfil"><i class="fa-solid fa-pencil align-self-center"></i></a>
+    <a href="index.php?action=editProfil" class="align-self-center" style="color:black;"><i class="fa-solid fa-pencil"></i></a>
   </div>
     <div class="card-body" >
       <div class="d-flex justify-content-start">
-        <h3>Prenom:</h3>
-        <p class="align-self-center"><?=$admin['Prenom']?></p>
+        <h3>Prenom:</h3>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="align-self-center"><b><?=$admin['Prenom']?></b></span>
       </div>
       <div class="d-flex justify-content-start">
-        <h4>Nom:</h4>
-        <p><?=$admin['Nom']?></p>
+        <h4>Nom:</h4>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="align-self-center"><b><?=$admin['Nom']?></b></span>
       </div>
-      <div class="d-flex justify-content-sc">
-        <h3>Login:</h3>
-        <p class="align-self-center"><?=$admin['login']?></p>
+      <div class="d-flex justify-content-start">
+        <h3>Login:</h3>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="align-self-center"><b><?=$admin['login']?></b></span>
       </div>
       
        

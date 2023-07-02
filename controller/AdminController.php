@@ -31,7 +31,7 @@ class AdminController{
             $_SESSION['username']=$username;
             $_SESSION['pwd'] =$pwd;
 
-            header('location:index.php?action=homeAdmin');
+            header('location:index.php?action=home');
             exit();
         }
     }
@@ -43,7 +43,7 @@ class AdminController{
 
     public function goHome(){
         $articles = $this->articleDao->getLastArticle();
-        require('view/admin/homeAdmin.php');
+        require('view/admin/home.php');
     }
 
     public function logUp(){

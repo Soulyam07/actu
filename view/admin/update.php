@@ -37,10 +37,10 @@
         <ul class="navbar-nav">
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Profil
+          <i class="fa-solid fa-user fa-beat-fade"></i>
           </a>
           <ul class="dropdown-menu dropdown-menu-lg-end " aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item active" href="#" aria-current="page">Voir Profil</a></li>
+            <li><a class="dropdown-item active" href="index.php?action=profil" aria-current="page">Voir Profil</a></li>
             <li><a class="dropdown-item" href="index.php?action=deconnexion">Deconnexion</a></li>
             
           </ul>

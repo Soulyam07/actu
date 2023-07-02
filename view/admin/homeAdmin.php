@@ -50,25 +50,28 @@
   </div>
 </nav>
 <br>
-
-    <div class="card bg-light">
-        <?php                
+<?php                
 
         foreach ($articles as $article) { 
         ?> 
-        <div class="card-header d-flex">
-        <h3>
-           <?=$article['titre']?> </h3>&nbsp;&nbsp;<span class="align-self-center"> <?=$article['libelle']?> </span> 
+    <div class="card mt-4 mb-3">
+        
+        <div class="card-header d-flex justify-content-start">
+          <h3>
+            <?=$article['titre']?> </h3>&nbsp;&nbsp;<span class="align-self-center"> <?=$article['libelle']?> </span> 
 
         </div>
         <div class="card-body">
             <p><?=$article['contenu']?></p>
-            <a href="index.php?action=seeById&amp;id=<?=$article['id']?>">Voir en details</a></div>
-        <?php }
+            <a href="index.php?action=seeById&amp;id=<?=$article['id']?>">Voir en details</a>
+        </div>
+      
     
-    ?>
        
     </div>
+    <?php }
+    
+    ?>
 
 
 

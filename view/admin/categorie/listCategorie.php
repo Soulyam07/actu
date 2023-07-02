@@ -9,6 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9f528a4563.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -21,13 +22,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link"  href="index.php?action=homeAdmin">Accueil</a>
+          <a class="nav-link"  href="index.php?action=home">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php?action=listArticle">Voir mes articles</a>
+          <a class="nav-link" href="index.php?action=listArticle">Voir mes articles</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?action=listCategorie">Categorie</a>
+          <a class="nav-link active" aria-current="page" href="index.php?action=listCategorie">Categorie</a>
         </li>
        
       
@@ -36,7 +37,7 @@
         <ul class="navbar-nav">
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Profil
+          <i class="fa-solid fa-user fa-beat-fade"></i>
           </a>
           <ul class="dropdown-menu dropdown-menu-lg-end " aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="index.php?action=profil">Voir Profil</a></li>
@@ -51,10 +52,13 @@
 </nav>
 
 
-<div class="card mt-4 bg-light">
-    <div class="card-header bg-light d-flex justify-content-center">
-        <h4 class="text-center">Liste des categorie</h4>&nbsp;
-        <a href="index.php?action=addCategorie" class="align-self-center">+</a>
+<div class="card w-50 mt-4 bg-light mx-auto">
+   
+
+    <div class="card-header bg-light d-flex bd-highlight mb-3">
+        <h4 class="me-auto p-2 bd-highlight">Liste des categories</h4>&nbsp;
+        <a type="button" href="index.php?action=addCategorie" class="p-2 bd-highlight align-self-center" style="color:black;"><i class="fa-solid fa-circle-plus fa-beat fa-2xl"></i>
+         </a>
     </div>
     <div class="card-body bg-light">
 
@@ -76,10 +80,11 @@
                   <td>
                   <?=$categorie['libelle']?>
                   </td>
+                 
                   <td class="d-flex">
-                    <a href="index.php?action=editCategorie&id=<?= $categorie['id']?>">up</a>
-                    <a type="button" onclick="confirmDelete()">del</a>&nbsp;
-                    <a href="index.php?action=seeOneCategorie&id=<?= $categorie['id']?>">see</a>
+                    <a href="index.php?action=editCategorie&id=<?= $categorie['id']?>" style="color:black;"><i class="fa-solid fa-pencil"></i></a>&nbsp;
+                    <a type="button" onclick="confirmDelete()"  style="color:black;"><i class="fa-solid fa-trash"></i></a>&nbsp;
+                    <a href="index.php?action=seeOneCategorie&id=<?= $categorie['id']?>" style="color:black;"><i class="fa-solid fa-eye"></i></a>
                   </td>
                   
                   <script>

@@ -267,8 +267,9 @@ footer a {
 	<div class="form-container sign-up-container">
 		<form >
 			<h1>Creer un compte</h1>
-			<input type="text" placeholder="Prenom et nom" />
-			<input type="email" placeholder="Email" />
+			<input type="text" placeholder="Prenom" />
+			<input type="text" placeholder="Nom" />
+			<input type="text" placeholder="login" />
 			<input type="password" placeholder="Password" />
 			<button>Creer un compte</button>
 		</form>
@@ -278,7 +279,7 @@ footer a {
 			<h1>Connexion</h1>
 		
 			
-			<input type="text" placeholder="Email" name="username"/>
+			<input type="text" placeholder="login" name="username"/>
 			<input type="password" placeholder="Password" name="pwd"/>
 			<!-- <a href="#">Forgot your password?</a> -->
 			<button type="submit">Connexion</button>
